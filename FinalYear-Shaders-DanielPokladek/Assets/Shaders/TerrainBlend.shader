@@ -21,11 +21,11 @@
         // Physically based Standard lighting model, and enable shadows on all light types
         #pragma surface surf Lambert
         // Use shader model 3.0 target, to get nicer looking lighting
-        #pragma target 3.0
+        #pragma target 3.5
 
-        float4 _MainTint;		
-		float4 _ColorA;
-		float4 _ColorB;
+        fixed4 _MainTint;		
+		fixed4 _ColorA;
+		fixed4 _ColorB;
 		sampler2D _RTexture;		// Red Channel
 		sampler2D _GTexture;		// Green Channel
 		sampler2D _BTexture;		// Blue Channel
@@ -63,8 +63,9 @@
 			finalColor.a = 1.0f;
 
 			// Add on our terrain tinting colors
-			float4 terrainLayers = lerp(_ColorA, _ColorB, blendData.r);
-			finalColor *= terrainLayers;
+			float3 terrainLayers = lerp(_ColorA, _ColorB, blendData.r);
+			float4 terrain = float4(terrainLayers.r, terrainLayers.g, terrainLayers.b, 1.0f);
+			finalColor *= terrain;
 			finalColor = saturate(finalColor);
 
 			o.Albedo = finalColor.rgb * _MainTint.rgb;
