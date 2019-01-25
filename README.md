@@ -3,7 +3,7 @@
   
 ### More will be added as progress is made.
 ### Currently planned shaders:
-1. RainySurface Shader (based on DeepSpaceBannana's Unreal Shader)
+1. RainySurface Shader ([based on DeepSpaceBannana's Unreal Shader](https://deepspacebanana.github.io/deepspacebanana.github.io/blog/shader/art/unreal%20engine/Rainy-Surface-Shader-Part-1))
 2. Photorealistic Ice Shader
 3. Borderlands-style Toon Shader/Simple Interior Mapping Shader
   
