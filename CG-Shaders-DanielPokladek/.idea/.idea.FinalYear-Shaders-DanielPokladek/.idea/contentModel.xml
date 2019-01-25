@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\2kXswitX\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\2kXswitX\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_FinalYear-Shaders-DanielPokladek.1658255552.00" t="ExcludeRecursive" />
+    <e p="C:\Users\2kXswitX\Documents\GitHub\Final-Project\FinalYear-Shaders-DanielPokladek" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="RadiusScript.cs" t="Include" />
+          <e p="SM_RaycastMouse.cs" t="Include" />
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="CellShader.shader" t="Include" />
+          <e p="Final-Project Shaders" t="Include">
+            <e p="MF_Ripples.shader" t="Include" />
+            <e p="RainySurface.shader" t="Include" />
+          </e>
+          <e p="NormalShader.shader" t="Include" />
+          <e p="RadiusShader.shader" t="Include" />
+          <e p="ScrollingTexture.shader" t="Include" />
+          <e p="Silhouette.shader" t="Include" />
+          <e p="SphericalMask.shader" t="Include" />
+          <e p="Standard" t="Include">
+            <e p="DiffuseAmbient.shader" t="Include" />
+            <e p="DiffuseShader.shader" t="Include" />
+            <e p="DiffuseTexture.shader" t="Include" />
+            <e p="SimpleLambert.shader" t="Include" />
+          </e>
+          <e p="TerrainBlend.shader" t="Include" />
+          <e p="Transparent.shader" t="Include" />
+        </e>
+      </e>
+      <e p="FinalYear-Shaders-DanielPokladek.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
