@@ -2,6 +2,7 @@
 {
     Properties
     {
+        _RainSpeed("Rain Speed", float) = 1.0
         _Color ("Color", Color) = (1,1,1,1)
         _PackedTexture ("Packed Rain Texture", 2D) = "white" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
@@ -24,9 +25,10 @@
         struct Input
         {
             float2 uv_PackedTexture;
-            float _Time;
+            float _Time;                // Unity's built in Time function (time since level load)
         };
-
+        
+        float _RainSpeed;
         half _Glossiness;
         half _Metallic;
         fixed4 _Color;
@@ -39,14 +41,21 @@
         UNITY_INSTANCING_BUFFER_END(Props)
 
         void surf (Input IN, inout SurfaceOutputStandard o)
-        {        
-            // Albedo comes from a texture tinted by color
-            fixed4 c = tex2D (_PackedTexture, IN.uv_PackedTexture) * _Color;
-            o.Albedo = c.rgb;
-            // Metallic and smoothness come from slider variables
-            o.Metallic = _Metallic;
-            o.Smoothness = _Glossiness;
-            o.Alpha = c.a;
+        {
+            // Get the red channel of our packed texture.
+            // Apply simple Alpha Erosion to simulate the "growing" of ripples
+            float redChannel = tex2D(_PackedTexture, IN.uv_PackedTexture).r;
+            redChannel = redChannel - (1.0 - frac(IN._Time*_RainSpeed));
+            
+            o.Albedo = redChannel;
+//            
+//            // Albedo comes from a texture tinted by color
+//            fixed4 c = tex2D (_PackedTexture, IN.uv_PackedTexture) * _Color;
+//            o.Albedo = c.rgb;
+//            // Metallic and smoothness come from slider variables
+//            o.Metallic = _Metallic;
+//            o.Smoothness = _Glossiness;
+//            o.Alpha = c.a;
         }
         ENDCG
     }
