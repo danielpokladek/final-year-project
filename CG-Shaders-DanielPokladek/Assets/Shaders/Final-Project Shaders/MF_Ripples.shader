@@ -25,7 +25,6 @@
         struct Input
         {
             float2 uv_PackedTexture;
-            float _Time;                // Unity's built in Time function (time since level load)
         };
         
         float _RainSpeed;
@@ -44,10 +43,17 @@
         {
             // Get the red channel of our packed texture.
             // Apply simple Alpha Erosion to simulate the "growing" of ripples
-            float redChannel = tex2D(_PackedTexture, IN.uv_PackedTexture).r;
-            redChannel = redChannel - (1.0 - frac(IN._Time*_RainSpeed));
+            float ripples = tex2D(_PackedTexture, IN.uv_PackedTexture).r;
+            float alphaErosion = ripples - (1.0 - frac(_Time.y*_RainSpeed));
+            float edgeMask = 1.0 - (smoothstep(0, 1, (distance(alphaErosion, 0.05) / 0.05)));
+            float fadeEffect = abs(sin((_Time.y*_RainSpeed)*0.5));
             
-            o.Albedo = redChannel;
+            
+            float finalEffect = edgeMask;
+            
+            o.Albedo = finalEffect;
+            o.Metallic = 0;
+            o.Smoothness = 0;
 //            
 //            // Albedo comes from a texture tinted by color
 //            fixed4 c = tex2D (_PackedTexture, IN.uv_PackedTexture) * _Color;
