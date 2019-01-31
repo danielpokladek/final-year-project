@@ -43,18 +43,19 @@
         {
 			// Getting the 'time' value from Unity's built in float4 _Time.
 			float time = _Time.y;
+			float calcTime = 1.0 - (frac(time*_RainSpeed));
 
             // Get the red channel of our packed texture.
             float redChannel = tex2D(_PackedTexture, IN.uv_PackedTexture).r;
 
 			// Calculate alpha erosion.
-            float alphaErosion = redChannel - (1.0 - frac(time*_RainSpeed));
+            float alphaErosion = redChannel - calcTime;
 
 			// Calculate edge mask.
-            float edgeMask = 1.0 - (smoothstep(0, 1, (distance(alphaErosion, 0.05) / 0.05)));
+            float edgeMask = 1.0 - (smoothstep(0, 1, (distance(alphaErosion, 0.04) / 0.05)));
 
 			// Calculate fade of the ripples.
-            float fadeEffect = abs(sin(time));
+            float fadeEffect = abs(sin(calcTime));
             
 			// Multiply the masked ripples, with the fade.
             float finalEffect = edgeMask * fadeEffect;
