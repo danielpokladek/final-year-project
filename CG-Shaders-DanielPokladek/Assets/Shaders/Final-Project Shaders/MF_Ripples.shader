@@ -3,6 +3,7 @@
     Properties
     {
         _RainSpeed("Rain Speed", float) = 1.0
+        _EdgeWidth("Ripple Edge Width", float) = 0.05
         _Color ("Color", Color) = (1,1,1,1)
         _PackedTexture ("Packed Rain Texture", 2D) = "white" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
@@ -28,8 +29,9 @@
         };
         
         float _RainSpeed;
+        float _EdgeWidth;
+        
         half _Glossiness;
-        //half _Metallic;
         fixed4 _Color;
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
@@ -52,7 +54,7 @@
             float alphaErosion = redChannel - calcTime;
 
 			// Calculate edge mask.
-            float edgeMask = 1.0 - (smoothstep(0, 1, (distance(alphaErosion, 0.04) / 0.05)));
+            float edgeMask = 1.0 - (smoothstep(0, 1, (distance(alphaErosion, 0.05) / _EdgeWidth)));
 
 			// Calculate fade of the ripples.
             float fadeEffect = abs(sin(calcTime));

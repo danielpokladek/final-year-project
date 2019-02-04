@@ -13,13 +13,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/MF_Ripples.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1015">
-              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+            <state relative-caret-position="736">
+              <caret line="65" column="35" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="65" selection-end-column="35" />
               <folding>
-                <marker date="1548717250058" expanded="true" signature="40:2430" ph="{...}" />
-                <marker date="1548717250058" expanded="true" signature="61:324" ph="{...}" />
-                <marker date="1548717250058" expanded="true" signature="343:2405" ph="{...}" />
-                <marker date="1548717250058" expanded="true" signature="418:2394" ph="{...}" />
+                <marker date="1549249222733" expanded="true" signature="40:2689" ph="{...}" />
+                <marker date="1549249222733" expanded="true" signature="61:329" ph="{...}" />
+                <marker date="1549249222733" expanded="true" signature="348:2664" ph="{...}" />
+                <marker date="1549249222733" expanded="true" signature="423:2653" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -43,8 +43,8 @@
     </ignored-facets>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-502" />
-    <option name="y" value="-19" />
+    <option name="x" value="2119" />
+    <option name="y" value="-23" />
     <option name="width" value="1920" />
     <option name="height" value="1058" />
   </component>
@@ -53,14 +53,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -104,10 +104,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="2576" height="1426" extended-state="6" />
+    <frame x="2552" y="22" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33528784" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Captures" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -152,13 +152,13 @@
     <entry file="file://$PROJECT_DIR$/../Graph-Shaders-DanielPokladek/Temp/GeneratedFromGraph-MF_Ripples-Divide-e7dc0061-8acb-402a-989e-294d2d09175d.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/MF_Ripples.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1015">
-          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        <state relative-caret-position="736">
+          <caret line="65" column="35" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="65" selection-end-column="35" />
           <folding>
-            <marker date="1548717250058" expanded="true" signature="40:2430" ph="{...}" />
-            <marker date="1548717250058" expanded="true" signature="61:324" ph="{...}" />
-            <marker date="1548717250058" expanded="true" signature="343:2405" ph="{...}" />
-            <marker date="1548717250058" expanded="true" signature="418:2394" ph="{...}" />
+            <marker date="1549249222733" expanded="true" signature="40:2689" ph="{...}" />
+            <marker date="1549249222733" expanded="true" signature="61:329" ph="{...}" />
+            <marker date="1549249222733" expanded="true" signature="348:2664" ph="{...}" />
+            <marker date="1549249222733" expanded="true" signature="423:2653" ph="{...}" />
           </folding>
         </state>
       </provider>
