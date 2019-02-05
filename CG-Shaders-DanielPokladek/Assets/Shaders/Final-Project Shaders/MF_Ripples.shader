@@ -43,24 +43,29 @@
 
         void surf (Input IN, inout SurfaceOutput o)
         {
-			// Getting the 'time' value from Unity's built in float4 _Time.
-			float time = _Time.y;
-			float calcTime = 1.0 - (frac(time*_RainSpeed));
-
-            // Get the red channel of our packed texture.
-            float redChannel = tex2D(_PackedTexture, IN.uv_PackedTexture).r;
-
-			// Calculate alpha erosion.
-            float alphaErosion = redChannel - calcTime;
-
-			// Calculate edge mask.
-            float edgeMask = 1.0 - (smoothstep(0, 1, (distance(alphaErosion, 0.05) / _EdgeWidth)));
-
-			// Calculate fade of the ripples.
-            float fadeEffect = abs(sin(calcTime));
+            // Get and store the currente time value, from Unity's built in float4.
+            float currTime = _Time.y;
+            float calcTime = (1.0 - (frac(currTime*_RainSpeed)));
             
-			// Multiply the masked ripples, with the fade.
-            float finalEffect = edgeMask * fadeEffect;
+            float ripplesTex = tex2D(_PackedTexture, IN.uv_PackedTexture).r;
+            float ripplesFade = abs(sin(calcTime));
+            
+            // First ripples
+            float firstRipple = ripplesTex;                                                         // Assign the riiples texture.
+            firstRipple = firstRipple - calcTime;                                                   // Calculate the alpha erosion of the texture.
+            firstRipple = 1.0 - (smoothstep(0, 1, (distance(firstRipple, 0.05) / _EdgeWidth)));     // Calculate the edge of the ripples.
+            firstRipple = firstRipple * ripplesFade;                                                // Apply fade to the ripples.
+            
+            // Second ripples - FIND HOW TO ADD OFFSET TO THE UV OF THE TEXTURE AS IT IS IN THE SHADER GRAPH
+            float sr_calcTime = (1.0 - (frac((currTime + 1)*_RainSpeed)));
+            float secondRipple = ripplesTex;
+            secondRipple = secondRipple - sr_calcTime;
+            secondRipple = 1.0 - (smoothstep(0, 1, (distance(secondRipple, 0.05) / _EdgeWidth)));
+            secondRipple = secondRipple * ripplesFade;
+            
+            float lerpTime = clamp(0, 1, abs(sin((calcTime*_RainSpeed)*1)));
+                        
+            float finalEffect = lerp(firstRipple, secondRipple, lerpTime);
             
 			// Apply shader to the material.
             o.Albedo = finalEffect;

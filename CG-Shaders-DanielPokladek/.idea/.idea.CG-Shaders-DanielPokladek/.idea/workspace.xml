@@ -13,13 +13,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/MF_Ripples.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="65" column="35" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="65" selection-end-column="35" />
+            <state relative-caret-position="437">
+              <caret line="58" column="108" selection-start-line="58" selection-start-column="108" selection-end-line="58" selection-end-column="108" />
               <folding>
-                <marker date="1549249222733" expanded="true" signature="40:2689" ph="{...}" />
-                <marker date="1549249222733" expanded="true" signature="61:329" ph="{...}" />
-                <marker date="1549249222733" expanded="true" signature="348:2664" ph="{...}" />
-                <marker date="1549249222733" expanded="true" signature="423:2653" ph="{...}" />
+                <marker date="1549327779595" expanded="true" signature="40:3545" ph="{...}" />
+                <marker date="1549327779595" expanded="true" signature="61:329" ph="{...}" />
+                <marker date="1549327779595" expanded="true" signature="348:3520" ph="{...}" />
+                <marker date="1549327779595" expanded="true" signature="423:3509" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -53,14 +53,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,13 +152,13 @@
     <entry file="file://$PROJECT_DIR$/../Graph-Shaders-DanielPokladek/Temp/GeneratedFromGraph-MF_Ripples-Divide-e7dc0061-8acb-402a-989e-294d2d09175d.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/MF_Ripples.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="65" column="35" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="65" selection-end-column="35" />
+        <state relative-caret-position="437">
+          <caret line="58" column="108" selection-start-line="58" selection-start-column="108" selection-end-line="58" selection-end-column="108" />
           <folding>
-            <marker date="1549249222733" expanded="true" signature="40:2689" ph="{...}" />
-            <marker date="1549249222733" expanded="true" signature="61:329" ph="{...}" />
-            <marker date="1549249222733" expanded="true" signature="348:2664" ph="{...}" />
-            <marker date="1549249222733" expanded="true" signature="423:2653" ph="{...}" />
+            <marker date="1549327779595" expanded="true" signature="40:3545" ph="{...}" />
+            <marker date="1549327779595" expanded="true" signature="61:329" ph="{...}" />
+            <marker date="1549327779595" expanded="true" signature="348:3520" ph="{...}" />
+            <marker date="1549327779595" expanded="true" signature="423:3509" ph="{...}" />
           </folding>
         </state>
       </provider>
