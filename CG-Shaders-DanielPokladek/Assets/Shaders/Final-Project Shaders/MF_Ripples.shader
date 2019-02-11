@@ -19,7 +19,7 @@
         #pragma surface surf Lambert
 
         // Use shader model 3.0 target, to get nicer looking lighting
-        #pragma target 3.0
+        #pragma target 3.5
 
         sampler2D _PackedTexture;
 
@@ -43,46 +43,44 @@
 
         void surf (Input IN, inout SurfaceOutput o)
         {
-            // Get and store the currente time value, from Unity's built in float4.
-            float currTime = _Time.y;
-            float calcTime = (1.0 - (frac(currTime*_RainSpeed)));
+            // Calculate the time to animate first set of ripples.
+            // Next get the packed texture, and apply alpha erosion to it.
+            // Calculate a fade effect for the ripples, and apply them.
+            half rippleOneTime = 1.0 - (frac(_Time.y * _RainSpeed));
             
-            float ripplesTex = tex2D(_PackedTexture, IN.uv_PackedTexture).r;
-            float ripplesFade = abs(sin(calcTime));
+            float rippleOneTex  = tex2D(_PackedTexture, IN.uv_PackedTexture).r;                         // Use the '.r' at the end, to only get the red channel.
+            float rippleOne     = rippleOneTex - rippleOneTime;                                         // Use alpha erosion to create the effect of ripples expanding.
+            float rippleOneWidth = 1.0 - (smoothstep(0, 1, (distance(rippleOne, 0.05) / _EdgeWidth))); // Calculate the width of ripples.
+            float rippleOneFade  = abs(sin((rippleOneTime * _RainSpeed) * 1.0));
             
-            // First ripples
-            float firstRipple = ripplesTex;                                                         // Assign the riiples texture.
-            firstRipple = firstRipple - calcTime;                                                   // Calculate the alpha erosion of the texture.
-            firstRipple = 1.0 - (smoothstep(0, 1, (distance(firstRipple, 0.05) / _EdgeWidth)));     // Calculate the edge of the ripples.
-            firstRipple = firstRipple * ripplesFade;                                                // Apply fade to the ripples.
+            float rippleOneFinal = rippleOneWidth * rippleOneFade;                                      // Combining the width calculation with the fade effect.
             
-            // Second ripples - FIND HOW TO ADD OFFSET TO THE UV OF THE TEXTURE AS IT IS IN THE SHADER GRAPH
-            float sr_calcTime = (1.0 - (frac((currTime + 1)*_RainSpeed)));
-            float secondRipple = ripplesTex;
-            secondRipple = secondRipple - sr_calcTime;
-            secondRipple = 1.0 - (smoothstep(0, 1, (distance(secondRipple, 0.05) / _EdgeWidth)));
-            secondRipple = secondRipple * ripplesFade;
             
-            float lerpTime = clamp(0, 1, abs(sin((calcTime*_RainSpeed)*1)));
+            // Calculate the time to animate second set of ripples.
+            half rippleTwoTime = (1.0 - (frac((_Time.y + 0.5) * _RainSpeed)));
+            
+            // Add UV offset to ripples, to make sure they are not on top of each other.
+            float2 uv_ripplesTwoUV = IN.uv_PackedTexture;
+            uv_ripplesTwoUV.x = uv_ripplesTwoUV.x + 0.1;
+            uv_ripplesTwoUV.y = uv_ripplesTwoUV.y + 0.1;
+            
+            // Next get the packed texture (with UV offset), and apply the alpha erosion to it.
+            // Calculate the fade effect for the ripples and apply them.
+            float rippleTwoTex     = tex2D(_PackedTexture, uv_ripplesTwoUV).r;
+            float rippleTwo         = rippleTwoTex - rippleTwoTime;
+            float rippleTwoWidth    = 1.0 - (smoothstep(0, 1, (distance(rippleTwo, 0.05) / _EdgeWidth)));
+            float rippleTwoFade     = abs(sin((rippleTwoTime * _RainSpeed) * 1.0));
+            
+            float rippleTwoFinal = rippleTwoWidth * rippleTwoFade;
+            
+            // Time used for the lerp function.
+            float lerpTime = (1.0 - frac(_Time.y * 0.5));
+            float lt = clamp(0, 1, (lerpTime * _RainSpeed)*0.5);
                         
-            float finalEffect = lerp(firstRipple, secondRipple, lerpTime);
+            float finalEffect = lerp(rippleOneFinal, rippleTwoFinal, lt);
             
 			// Apply shader to the material.
             o.Albedo = finalEffect;
-			
-			
-			
-			
-			// o.Metallic = 0;
-            //o.Smoothness = 0;
-//            
-//            // Albedo comes from a texture tinted by color
-//            fixed4 c = tex2D (_PackedTexture, IN.uv_PackedTexture) * _Color;
-//            o.Albedo = c.rgb;
-//            // Metallic and smoothness come from slider variables
-//            o.Metallic = _Metallic;
-//            o.Smoothness = _Glossiness;
-//            o.Alpha = c.a;
         }
         ENDCG
     }
