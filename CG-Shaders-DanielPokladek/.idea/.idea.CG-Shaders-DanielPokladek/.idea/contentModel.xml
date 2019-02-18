@@ -15,6 +15,7 @@
           <e p="Final-Project Shaders" t="Include">
             <e p="MF_Ripples.shader" t="Include" />
             <e p="RainySurface.shader" t="Include" />
+            <e p="RipplesTest.shader" t="Include" />
           </e>
           <e p="NormalShader.shader" t="Include" />
           <e p="RadiusShader.shader" t="Include" />

@@ -51,13 +51,21 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _PackedTexture:
+    - _PackedTex:
         m_Texture: {fileID: 2800000, guid: 99560530f8dcd2d408c0ac76985d42e8, type: 3}
         m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PackedTexture:
+        m_Texture: {fileID: 2800000, guid: 99560530f8dcd2d408c0ac76985d42e8, type: 3}
+        m_Scale: {x: 1.5, y: 1.5}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
@@ -77,6 +85,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _EdgeWidth: 0.05
     - _EmissionStrength: 1
     - _FadeEffect: 0
     - _GlossMapScale: 1

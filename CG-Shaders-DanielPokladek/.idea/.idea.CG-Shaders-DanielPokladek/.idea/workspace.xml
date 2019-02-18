@@ -13,13 +13,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/MF_Ripples.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+            <state relative-caret-position="391">
+              <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
               <folding>
-                <marker date="1549835764710" expanded="true" signature="40:3900" ph="{...}" />
-                <marker date="1549835764710" expanded="true" signature="61:329" ph="{...}" />
-                <marker date="1549835764710" expanded="true" signature="348:3875" ph="{...}" />
-                <marker date="1549835764710" expanded="true" signature="423:3864" ph="{...}" />
+                <marker date="1550437759940" expanded="true" signature="40:3507" ph="{...}" />
+                <marker date="1550437759940" expanded="true" signature="61:283" ph="{...}" />
+                <marker date="1550437759940" expanded="true" signature="302:3482" ph="{...}" />
+                <marker date="1550437759940" expanded="true" signature="377:3471" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/RipplesTest.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="56" />
+              <folding>
+                <marker date="1550431778699" expanded="true" signature="28:1648" ph="{...}" />
+                <marker date="1550431778699" expanded="true" signature="49:253" ph="{...}" />
+                <marker date="1550431778699" expanded="true" signature="272:1623" ph="{...}" />
+                <marker date="1550431778699" expanded="true" signature="347:1612" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -28,6 +43,7 @@
     </leaf>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/RipplesTest.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/MF_Ripples.shader" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -42,26 +58,17 @@
       <facet id="riderModule/invalid/Default Android Facet" />
     </ignored-facets>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2119" />
     <option name="y" value="30" />
     <option name="width" value="1932" />
     <option name="height" value="1058" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="UnityExplorer" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-      </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
@@ -150,15 +157,28 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../Graph-Shaders-DanielPokladek/Temp/GeneratedFromGraph-MF_Ripples-Divide-e7dc0061-8acb-402a-989e-294d2d09175d.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/RipplesTest.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="56" />
+          <folding>
+            <marker date="1550431778699" expanded="true" signature="28:1648" ph="{...}" />
+            <marker date="1550431778699" expanded="true" signature="49:253" ph="{...}" />
+            <marker date="1550431778699" expanded="true" signature="272:1623" ph="{...}" />
+            <marker date="1550431778699" expanded="true" signature="347:1612" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/MF_Ripples.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        <state relative-caret-position="391">
+          <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
           <folding>
-            <marker date="1549835764710" expanded="true" signature="40:3900" ph="{...}" />
-            <marker date="1549835764710" expanded="true" signature="61:329" ph="{...}" />
-            <marker date="1549835764710" expanded="true" signature="348:3875" ph="{...}" />
-            <marker date="1549835764710" expanded="true" signature="423:3864" ph="{...}" />
+            <marker date="1550437759940" expanded="true" signature="40:3507" ph="{...}" />
+            <marker date="1550437759940" expanded="true" signature="61:283" ph="{...}" />
+            <marker date="1550437759940" expanded="true" signature="302:3482" ph="{...}" />
+            <marker date="1550437759940" expanded="true" signature="377:3471" ph="{...}" />
           </folding>
         </state>
       </provider>
