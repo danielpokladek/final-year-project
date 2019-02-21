@@ -48,12 +48,13 @@ This folder contains the Unity project with shaders I have made using Shader Gra
 This is the to-do list for my shaders.
 * Rainy Surface Shader:
 	* [X] Research the shader, and it's components.
-	* [X] Extract data from each of the channels.
-  * [ ] Create ripple effect on object surface.
+	* [X] Extract textures from each of the channels.
+  	* [X] Create ripple effect on object surface.
+	* [X] Time the effects properly, so they look seamless.
+	* [X] Add ability to insert a normal map for ripples.
   * [ ] Add colour/texture to the ripple effect.
   * [ ] Create the streaks effect.
   * [ ] Add ability to blend between both effects.
-  * [ ] Add normals to both of the effects.
   * [ ] Rainy Surface done.  
   
 * Photorealistic Ice Shader:
