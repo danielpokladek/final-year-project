@@ -35,12 +35,40 @@ Material:
         m_Texture: {fileID: 2800000, guid: 836ffc6ff2e2f7244a370bd1c62c432a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2DLOD_38B4E4E5_Texture:
+        m_Texture: {fileID: 2800000, guid: 7b82d12aad56cc445b99fd1cf06a232d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_569EC232_Texture:
+        m_Texture: {fileID: 2800000, guid: 2ec6e1532acb1254f9f3797b5d82db44, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_82638141_Texture:
+        m_Texture: {fileID: 2800000, guid: 49a4610550f0fa445937662f58f2d0f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_DF2AF34E_Texture:
+        m_Texture: {fileID: 2800000, guid: 49a4610550f0fa445937662f58f2d0f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Subgraph_A85BAD4B_PackedTexture:
+        m_Texture: {fileID: 2800000, guid: 836ffc6ff2e2f7244a370bd1c62c432a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Subgraph_A85BAD4B_RippleNormal:
+        m_Texture: {fileID: 2800000, guid: 49a4610550f0fa445937662f58f2d0f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _DistortOffset: 1
     - _EdgeWidth: 0.05
+    - _Metallic: 0
     - _RainSpeed: 0.7
     - _Speed: 1
+    - _WaterBrightness: 0.4
     m_Colors:
     - _NoiseScale: {r: 1, g: 1, b: 0, a: 0}
     - _PrimColor: {r: 0.57647055, g: 0.03529412, b: 0.9921569, a: 1}
+    - _RippleTile: {r: 1, g: 1, b: 0, a: 0}
     - _SecColor: {r: 0.03137255, g: 0.5921568, b: 0.9921569, a: 1}
+    - _WaterCol: {r: 0.7294118, g: 0.8509805, b: 1, a: 1}

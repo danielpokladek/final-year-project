@@ -13,7 +13,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/MF_Ripples.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-871">
+            <state relative-caret-position="-322">
               <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding>
                 <marker date="1550713929186" expanded="true" signature="40:5396" ph="{...}" />
@@ -155,19 +155,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Graph-Shaders-DanielPokladek/Temp/GeneratedFromGraph-MF_Ripples-Multiply-d8ebc156-f9dd-49a4-b5ba-172c3d0384ce.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3976" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Graph-Shaders-DanielPokladek/Temp/GeneratedFromGraph-MF_Ripples-Multiply-1d920ca3-004c-4d24-bf59-e3d554c716d5.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5908" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Graph-Shaders-DanielPokladek/Temp/GeneratedFromGraph-MF_Ripples-Multiply-d8ebc156-f9dd-49a4-b5ba-172c3d0384ce.shader" />
+    <entry file="file://$PROJECT_DIR$/../Graph-Shaders-DanielPokladek/Temp/GeneratedFromGraph-MF_Ripples-Multiply-1d920ca3-004c-4d24-bf59-e3d554c716d5.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Shaders/Final-Project Shaders/MF_Ripples.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-871">
+        <state relative-caret-position="-322">
           <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
             <marker date="1550713929186" expanded="true" signature="40:5396" ph="{...}" />
