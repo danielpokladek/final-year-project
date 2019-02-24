@@ -48,14 +48,19 @@ This folder contains the Unity project with shaders I have made using Shader Gra
 This is the to-do list for my shaders.
 * Rainy Surface Shader:
 	* [X] Research the shader, and it's components.
-	* [X] Extract textures from each of the channels.
-  	* [X] Create ripple effect on object surface.
-	* [X] Time the effects properly, so they look seamless.
-	* [X] Add ability to insert a normal map for ripples.
-  * [ ] Add colour/texture to the ripple effect.
+	* [X] Use the red channel to read the ripple textures.
+  	* [X] Use alpha erosion & alpha mask to create the ripples.
+	* [X] Lerp two sets of ripples to create a seamless effect.
+	* [X] Give users the ability to insert a texture, with a supporting normal map.
+  	* [X] Give users the ability to change the colour of the ripples.
+	* [X] Add the sub-graph to the main shader file, and compile the effect.
+	* [X] Finish the ripples sub-effect.
   * [ ] Create the streaks effect.
   * [ ] Add ability to blend between both effects.
-  * [ ] Rainy Surface done.  
+  * [ ] Rainy Surface done.
+  
+  	* Minor tweaks:
+		* [ ] Change time values, to time the lerping better. (currently there is a weird sync problem)
   
 * Photorealistic Ice Shader:
 	* [ ] Research the shader, and it's components.
