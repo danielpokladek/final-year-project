@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FireMaterial
+  m_Name: MF_Ripples
   m_Shader: {fileID: 4800000, guid: 3d9252fd3d2841b4990bdff52b71f3a4, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseTex:
+        m_Texture: {fileID: 2800000, guid: 558730b6b3132124cbe91d944693be15, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DistortTex:
         m_Texture: {fileID: 2800000, guid: b9dde04fe29c0f94ebf7d3604e7aee7b, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -28,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 49a4610550f0fa445937662f58f2d0f5, type: 3}
+        m_Texture: {fileID: 2800000, guid: ec53c12f91824344ea3182eb93a795a7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PackedTex:
@@ -39,6 +43,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 7b82d12aad56cc445b99fd1cf06a232d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_30A70BB4_Texture:
+        m_Texture: {fileID: 2800000, guid: 836ffc6ff2e2f7244a370bd1c62c432a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_569EC232_Texture:
         m_Texture: {fileID: 2800000, guid: 2ec6e1532acb1254f9f3797b5d82db44, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -47,8 +55,16 @@ Material:
         m_Texture: {fileID: 2800000, guid: 49a4610550f0fa445937662f58f2d0f5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_981997DF_Texture:
+        m_Texture: {fileID: 2800000, guid: 836ffc6ff2e2f7244a370bd1c62c432a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_DF2AF34E_Texture:
         m_Texture: {fileID: 2800000, guid: 49a4610550f0fa445937662f58f2d0f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Subgraph_A85BAD4B_BaseTex:
+        m_Texture: {fileID: 2800000, guid: 87ce03bd447ccce48bbff87ac0d8355f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Subgraph_A85BAD4B_PackedTexture:
@@ -59,16 +75,33 @@ Material:
         m_Texture: {fileID: 2800000, guid: 49a4610550f0fa445937662f58f2d0f5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Subgraph_A85BAD4B_SurfaceNormal:
+        m_Texture: {fileID: 2800000, guid: fab85e0cacda9644a99e5182a86b71f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Subgraph_A85BAD4B_Texture2D35DF3DC3:
+        m_Texture: {fileID: 2800000, guid: 49a4610550f0fa445937662f58f2d0f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_575013FF: 2
+    - Vector1_5FEDE1B5: 0
+    - Vector1_9744826: 0.2
+    - Vector1_D1B1CC5D: 1
     - _DistortOffset: 1
     - _EdgeWidth: 0.05
     - _Metallic: 0
     - _RainSpeed: 0.7
+    - _RippleEdgeWidth: 0.05
     - _Speed: 1
     - _WaterBrightness: 0.4
     m_Colors:
+    - Vector2_5DA5FD69: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_9DC607BE: {r: 1.5, g: 1.5, b: 0, a: 0}
+    - Vector2_B56FB691: {r: 1, g: 1, b: 0, a: 0}
     - _NoiseScale: {r: 1, g: 1, b: 0, a: 0}
     - _PrimColor: {r: 0.57647055, g: 0.03529412, b: 0.9921569, a: 1}
     - _RippleTile: {r: 1, g: 1, b: 0, a: 0}
     - _SecColor: {r: 0.03137255, g: 0.5921568, b: 0.9921569, a: 1}
     - _WaterCol: {r: 0.7294118, g: 0.8509805, b: 1, a: 1}
+    - _WaterColor: {r: 1, g: 1, b: 1, a: 1}
