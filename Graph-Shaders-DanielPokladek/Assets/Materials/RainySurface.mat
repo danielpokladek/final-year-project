@@ -23,6 +23,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 836ffc6ff2e2f7244a370bd1c62c432a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BaseTex:
+        m_Texture: {fileID: 2800000, guid: 558730b6b3132124cbe91d944693be15, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -40,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 49a4610550f0fa445937662f58f2d0f5, type: 3}
+        m_Texture: {fileID: 2800000, guid: ec53c12f91824344ea3182eb93a795a7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -63,9 +67,21 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Subgraph_A85BAD4B_PackedTexture:
+        m_Texture: {fileID: 2800000, guid: 836ffc6ff2e2f7244a370bd1c62c432a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Subgraph_A85BAD4B_RippleNormal:
+        m_Texture: {fileID: 2800000, guid: 49a4610550f0fa445937662f58f2d0f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_575013FF: 3
+    - Vector1_5FEDE1B5: 0
     - Vector1_8DB2CFF1: 0.5
+    - Vector1_9744826: 0.2
     - Vector1_9E007F2F: 0.05
+    - Vector1_D1B1CC5D: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -87,6 +103,10 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Vector2_5DA5FD69: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_9DC607BE: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_B56FB691: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _WaterColor: {r: 0.7294118, g: 0.8509805, b: 1, a: 1}
