@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseTex:
-        m_Texture: {fileID: 2800000, guid: 558730b6b3132124cbe91d944693be15, type: 3}
+        m_Texture: {fileID: 2800000, guid: 27bf4342a9c76e34da9b5794d5752fff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortTex:
@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: ec53c12f91824344ea3182eb93a795a7, type: 3}
+        m_Texture: {fileID: 2800000, guid: fcf072d071e34cd4bb1b9d326eee86e9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PackedTex:
@@ -85,7 +85,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_575013FF: 2
-    - Vector1_5FEDE1B5: 0
+    - Vector1_5FEDE1B5: 0.4
     - Vector1_9744826: 0.2
     - Vector1_D1B1CC5D: 1
     - _DistortOffset: 1
