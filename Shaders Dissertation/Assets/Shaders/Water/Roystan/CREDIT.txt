@@ -1,0 +1,5 @@
+Shaders in this folder are directly created by Erik 'Roystan' Ross, and are used by Daniel Pokladek for learning purposes.
+
+Ross, E. R., n.d. Unity Tutorials and Portfolio. [Online] 
+Available at: https://roystan.net/
+[Accessed 15 01 2020].

@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IceMat
+  m_Shader: {fileID: 4800000, guid: 5dc2a14527e9ce34f9ed21e526780036, type: 3}
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SPECGLOSSMAP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: b5c74c70a734fad4a883c6031c824b16, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 2800000, guid: 19d04b30591231c4ab44cd2497d38a25, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortTex:
+        m_Texture: {fileID: 2800000, guid: 996817474b8e10c4f91ec7df6801730e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Emission:
+        m_Texture: {fileID: 2800000, guid: fce3bf39848755c4ab34bea75031dd00, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _LocalThickness:
+        m_Texture: {fileID: 2800000, guid: 950e46c6be24de84e817908302536c21, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: bef85e675d202104db5feb5bf623a322, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: bad7e8756cb192b4da7bac38f344ec90, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 996817474b8e10c4f91ec7df6801730e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: d9b0cbe37d6b7304fada130699c08131, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 2800000, guid: 15b1903568480834c86e112423993fa6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ramp:
+        m_Texture: {fileID: 2800000, guid: c03fe61487138e2418240be52088e02c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 2800000, guid: b7835dd1e9f50664a93eebb56b537636, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Attenuation: 0.8
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DistortAmount: 10
+    - _Distortion: -0.11
+    - _DistortionAmount: 2.9
+    - _DstBlend: 10
+    - _Emission: 0
+    - _GlossMapScale: 0.23
+    - _Glossiness: 0
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 3
+    - _OcclusionStrength: 1
+    - _Parallax: 0.08
+    - _Power: 2.5
+    - _RimBrightness: 3.2
+    - _Scale: 5.1
+    - _Shininess: 1
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 1
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 0
+    m_Colors:
+    - _Ambient: {r: 0.33490568, g: 0.84359366, b: 1, a: 1}
+    - _BottomColor: {r: 0.23, g: 0, b: 0.95, a: 1}
+    - _BottomColour: {r: 0.23, g: 0, b: 0.95, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _TColor: {r: 0.64, g: 0.94, b: 0.64, a: 1}
+    - _TopColour: {r: 0.64, g: 0.94, b: 0.64, a: 1}
